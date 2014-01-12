@@ -1,8 +1,9 @@
 {
-  "name": "micro",
+  "name": "micro-engine",
   "version": "0.0.1",
   "description": "Micro template engine",
   "main": "index.js",
+  "public": true,
   "scripts": {
     "test": "mocha -R nyan ./test/**/*.test.js"
   },

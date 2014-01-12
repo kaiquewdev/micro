@@ -8,12 +8,16 @@ A tiny template engine, with javascript execution isolation.
 
 Just for fun.
 
+### Installation
+
+  [sudo] npm i micro-engine
+
 ### Usage API
 
 #### Calling the module
 
   ```javascript
-  var micro = require('micro');
+  var micro = require('micro-engine');
   ```
 
 #### Definition
