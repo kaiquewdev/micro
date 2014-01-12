@@ -1,0 +1,20 @@
+{
+  "name": "micro",
+  "version": "0.0.1",
+  "description": "Micro template engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R nyan *.test.js"
+  },
+  "keywords": [
+    "template",
+    "engine",
+    "small",
+    "js-context"
+  ],
+  "author": "Kaique da Silva <kaique.developer@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "should": "~2.1.1"
+  }
+}
