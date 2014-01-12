@@ -2,6 +2,7 @@ var root = this;
 var template = null;
 // core modules
 var vm = require('vm');
+var util = require('util');
 // identifiers
 var s = '{{';
 var e = '}}';

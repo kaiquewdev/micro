@@ -1,5 +1,5 @@
 var should = require('should');
-var template = require('./');
+var template = require('../');
 
 describe('Template', function () {
   it('delimiter', function () {

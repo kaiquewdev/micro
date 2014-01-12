@@ -4,7 +4,7 @@
   "description": "Micro template engine",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R nyan *.test.js"
+    "test": "mocha -R nyan ./test/**/*.test.js"
   },
   "keywords": [
     "template",
