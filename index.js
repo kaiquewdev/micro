@@ -2,10 +2,13 @@ var root = this;
 var template = null;
 // core modules
 var vm = require('vm');
+var fs = require('fs');
+var path = require('path');
 var util = require('util');
 // identifiers
 var s = '{{';
 var e = '}}';
+var ext = '.mic';
 
 function templateDelimiterHandler ( content, pointer ) {
   var out = [];
@@ -93,8 +96,19 @@ function templateMainHandler ( content ) {
 }
 template = templateMainHandler;
 
+function templateFileHandler ( filename ) {
+  var hasExt = ~( filename.indexOf( ext ) );
+  var filename = ( hasExt ) ? filename : [ filename, ext ].join(''); 
+  var filepath = path.resolve( process.cwd(), filename );
+  var content = fs.readFileSync( filepath, 'utf-8' );
+
+  return template( content );
+}
+root.file = templateFileHandler;
+
 // static methods
 template.delimiter = root.delimiter;
 template.replace = root.replace;
+template.file = root.file;
 
 module.exports = exports = template;

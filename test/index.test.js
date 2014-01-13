@@ -113,4 +113,20 @@ describe('Template', function () {
       .should
       .eql( expected );
   });
+
+  it('render from file', function () {
+    var filename = './test/case/render.mic';  
+    var ctx = {
+      firstValue: 2,
+      secondValue: 3,
+    };
+    var renderExpression = '{{result, firstValue, secondValue}}';
+    var expected = '5, 2, 3';
+    var current = template.file( filename );
+
+    current
+      .render( ctx, renderExpression )
+      .should
+      .eql( expected );
+  });
 });

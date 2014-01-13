@@ -62,6 +62,25 @@ Just for fun.
   // 5, 2, 3
   ```
 
+#### Working with files
+
+  ```
+  some-file.mic
+  -------------
+
+  {{ var result = firstValue + secondValue; }}
+  ```
+
+  ```javascript
+  var content = micro.file( './some-file' );
+  content.render({ 
+    firstValue: 2, 
+    secondValue: 3 
+  }, '{{ result, firstValue, secondValue }}');
+
+  // 5, 2, 3
+  ```
+
 ### License
 
 Under BSD
