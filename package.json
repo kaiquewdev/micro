@@ -5,7 +5,7 @@
   "main": "index.js",
   "public": true,
   "scripts": {
-    "test": "mocha ./test/**/*.test.js"
+    "test": "mocha ./test"
   },
   "keywords": [
     "template",
