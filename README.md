@@ -1,5 +1,7 @@
 # Micro
 
+[![Build Status](https://travis-ci.org/kaiquewdev/micro.svg?branch=master)](https://travis-ci.org/kaiquewdev/micro)
+
 ### Description
 
 A tiny template engine, with javascript execution isolation.
